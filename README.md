@@ -6,11 +6,10 @@ Thank you for Arfan Zubi for tutotial on [Youtube](https://www.youtube.com/watch
 1. download iso from [Arch Linux](https://archlinux.org/download/)
 2. get [UTM](https://mac.getutm.app/)
 
-## Requirement:
+## UTM Setup and guide
 - Create virtual manager with UTM
-- choose linux, and just start the VM to boot from ISO file.
+- choose linux, and just start the VM to boot from mirror [ISO file](https://fastly.mirror.pkgbuild.com/iso/2025.11.01/) 
 - follow installation guide: https://wiki.archlinux.org/title/Installation_guide
-- Arch boot a bit bug so just using ctrl+c to exit and doing manually from terminal.
 
 ### Pre-install
 make everything is setup keymaps, font, check efi boot, internet and timestamp.

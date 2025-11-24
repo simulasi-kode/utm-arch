@@ -1,4 +1,4 @@
-# utm-arch
+ # utm-arch
 basic install Arch Linux 2025 on UTM Macbook pro 2017.
 
 ## Pre-Install Requirement:
@@ -9,14 +9,28 @@ basic install Arch Linux 2025 on UTM Macbook pro 2017.
 - Create virtual manager with UTM
 - choose linux, and just start the VM to boot from ISO file.
 - follow installation guide: https://wiki.archlinux.org/title/Installation_guide
-- Arch boot a bit bug, just do it manually from terminal.
+- Arch boot a bit bug so just using ctrl+c to exit and doing manually from terminal.
+### Pre-install
+make everything is setup keymaps, font, check efi boot, internet and timestamp.
 ```
 ~ loadkey us
-
 ```
+
 - change font
 ```
 ~  setfont Lat2-Terminus16
 ```
   
+- check efi boot
+``` 
+ls /sys/firmware/efi/efivars
+```
+make sure your have Internet Connection. If not connect check your UTM Network.
+```
+~ ping ping.archlinux.org
+```
+### Partition disk
+check your partition, to setup layout partition. following from Installation guid. run command ``` fdisk -l ```
+- 
+
 

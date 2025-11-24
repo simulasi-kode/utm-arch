@@ -1,10 +1,10 @@
 # utm-arch
 Basic install Arch Linux 2025 on UTM Macbook pro 2017.
-Thank you for Arfan Zubi for tutotial on [youtube]<https://www.youtube.com/watch?v=cOobSmI-XgA> 
+Thank you for Arfan Zubi for tutotial on [Youtube](https://www.youtube.com/watch?v=cOobSmI-XgA) 
 
 ## Pre-Install Requirement:
-1. download iso from: https://archboot.com/
-2. get UTM https://mac.getutm.app/
+1. download iso from [Arch Linux](https://archboot.com/)
+2. get [UTM](https://mac.getutm.app/)
 
 ## Installation Arch Linux
 - Create virtual manager with UTM

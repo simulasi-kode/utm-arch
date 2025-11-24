@@ -23,7 +23,7 @@ make everything is setup keymaps, font, check efi boot, internet and timestamp.
 ```
   
 - check efi boot
-![screen shoot efivars](Assets/01-Screenshot efivars.png)
+![screen shoot efivars](https://github.com/simulasikode/utm-arch/Assets/01-Screenshot efivars.png)
 ``` 
 # ls /sys/firmware/efi/efivars
 ```

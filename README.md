@@ -29,11 +29,11 @@ make sure your have Internet Connection. If not connect check your UTM Network.
 ```
 ~ ping ping.archlinux.org
 ```
-## Partition disk
+## A. Partition disk
 check your disk using command ```fdisk -l``` and create partition scheme by following Installation guide.
 - select partition: in my case i have Disk /dev/sda: 60GB. run command ```fdsik /dev/sda```
 - type *"g"* —— to create GPT Partition.
-### create partition —— UEFI, Swap and Linux
+### 1. Create partition —— UEFI, Swap and Linux
 - to create new partition type *"n"* –— Partition number using by default.
 - and first sector just following by default.
 - last sector will be size **+512M**
@@ -41,6 +41,19 @@ check your disk using command ```fdisk -l``` and create partition scheme by foll
 - create second partition for swap. step 1,2,3 is same like before only type is different using aliases: *swap*
 - create third partition type is *linux*
 !important after finish to save partition.
-- type *w* 
+- type *w* to write (save partition)
+make sure your partition layout already correct before format the partition.
 
+### 2. set partition
+- run commond. ```mkfs.ext4 /dev/sda3``` — root partition
+- run commond ```mkswap /dev/sda2``` - swap partition
+- run command ```mkfs.fat -F 32 /dev/sda1``` — uefi boot
+
+### 3. Mount partition
+mount you your file system
+```
+~ mount /dev/sda3 /mnt
+~ mount --mkdir /dev/sda1 /mnt/boot
+~ swapon /dev/sda2
+```
 

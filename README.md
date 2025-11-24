@@ -1,4 +1,4 @@
 # UTM ARCH
 Workflow installation Arch Linux using UTM Virtual Manager for Mac.
 
-## [Installation](Instaltion/README.md)
+## [Installation](Installtion/README.md)

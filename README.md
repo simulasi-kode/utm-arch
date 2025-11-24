@@ -109,4 +109,5 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```poweroff```
 
 make sure your cd installation has been clear from UTM app before you booting.
+note: after finish this step make sure your internet to active, if not using this ```systemctl start NetworkManager``` to start Network Manager.
 

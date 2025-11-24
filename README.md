@@ -30,7 +30,9 @@ make sure your have Internet Connection. If not connect check your UTM Network.
 ~ ping ping.archlinux.org
 ```
 ### Partition disk
-check your partition, to setup layout partition. following from Installation guid. run command ``` fdisk -l ```
-- 
+check your disk using command ```fdisk -l``` and create partition scheme by following Installation guide.
+- select partition: in my case i have Disk /dev/sda: 60GB. run command ```fdsik /dev/sda```
+- type "g" > to create GPT Partition.
+
 
 

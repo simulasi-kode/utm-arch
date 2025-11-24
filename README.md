@@ -11,6 +11,12 @@ basic install Arch Linux 2025 on UTM Macbook pro 2017.
 - follow installation guide: https://wiki.archlinux.org/title/Installation_guide
 - Arch boot a bit bug, just do it manually from terminal.
 ```
-loadkey us
+~ loadkey us
+
 ```
+- change font
+```
+~  setfont Lat2-Terminus16
+```
+  
 

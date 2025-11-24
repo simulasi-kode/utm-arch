@@ -83,16 +83,30 @@ make it sure it's correct check ```vim /mnt/etc/fstab```.
  
 - Initramfs
 ``` # mkinitcpio -P ```
+
 - root password
 ``` # passwd ``` — type your root password
 
 - Bootloader
-``` pacman -S grub efibootmgr ```
-``` grub-install --efi-directory=boot --bootloader-id=GRUB```
-``` grub-mkconfig -o /boot/grub/grub.cfg```
+
+```
+pacman -S grub efibootmgr
+```
+
+```
+grub-install --efi-directory=boot --bootloader-id=GRUB
+```
+
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 - Reboot
+
 ``` exit ```
+
 ```umount -R /mnt```
+
 ```poweroff```
+
 make sure your cd installation has been clear from UTM app before you booting.
 
